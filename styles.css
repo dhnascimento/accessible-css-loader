@@ -1,0 +1,29 @@
+.skeleton-loader {
+    box-sizing: border-box;
+    position: relative;
+    background: #AEAEAE no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    animation-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .skeleton-loader {
+        background-image: none;
+        animation: none;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% { 
+        opacity: 0.4;
+    }
+    0% {
+        opacity: 1;
+    }
+}
